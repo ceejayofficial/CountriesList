@@ -1,0 +1,96 @@
+/* CSS for the provided HTML */
+
+/* Flexbox container */
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding: 30px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid container */
+.grid {
+  display: grid;
+}
+
+/* Define the number of columns and gap between columns */
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Gap between grid items */
+.gap-4 > * {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Border and padding for grid items */
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e2e8f0; /* Adjust as needed */
+}
+
+/* Padding for grid items */
+.p-4 {
+  padding: 1rem;
+}
+
+/* Font styles for headings */
+.font-bold {
+  font-weight: bold;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Image styles */
+.w-full {
+  width: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-top-color: #3498db;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,18 @@
+ /* Dark mode styles */
+ .dark-mode .bg-header {
+  background-color: #1a202c; /* Dark background color */
+}
+.dark-mode .text-header {
+  color: #ffffff; /* Light text color */
+}
+
+/* Light mode styles */
+.light-mode .bg-header {
+  background-color: #ffffff; /* Light background color */
+}
+.light-mode .text-header {
+  color: #000000; /* Dark text color */
+}
+select{
+  width: 200px;
+}

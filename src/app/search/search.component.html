@@ -1,0 +1,14 @@
+<div class="grid grid-cols-4 gap-4">
+  <input type="text" name="searchInput">
+  @for (country of countries; track country) {
+  <div class="border p-4">
+    <h2 class="font-bold">{{ countries.name }}</h2>
+    <h2 class="font-bold">{{ countries.population }}</h2>
+    <p><span class="font-semibold">Region:</span> {{ countries.region }}</p>
+    <p><span class="font-semibold">Capital:</span> {{ countries.capital }}</p>
+    <div>
+      <img src="{{ countries.flags.svg }}" alt="Flag of {{ countries.name }}" class="w-full h-auto">
+    </div>
+  </div>
+  }
+</div>

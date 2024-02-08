@@ -1,0 +1,31 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div class="flex flex-col">
+
+  @if (programmer=='Christian Jones') {
+    <div class="grid grid-cols-4 gap-4">
+      @for (countries of countries; track countries) {
+      <div class="border p-4">
+        <h2 class="font-bold">{{ countries.name }}</h2>
+        <h2 class="font-bold">{{ countries.population }}</h2>
+        <p><span class="font-semibold">Region:</span> {{ countries.region }}</p>
+        <p><span class="font-semibold">Capital:</span> {{ countries.capital }}</p>
+        <div>
+          <img src="{{ countries.flags.svg }}" alt="Flag of {{ countries.name }}" class="w-full h-auto">
+        </div>
+      </div>
+      }
+    </div>
+
+  }@else if (programmer !=='Christian Jones') {
+
+    <app-not-found></app-not-found>
+  }
+
+
+</div>
+
+<router-outlet>
+</router-outlet>
+
+
