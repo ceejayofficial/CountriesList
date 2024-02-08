@@ -1,7 +1,10 @@
 import { Routes } from "@angular/router";
-import { HomeComponent } from "./Home/home.component";
-import { OtherComponent } from "./List/other.component";
-import { DisplayComponent } from "./navbar/display.component";
+import { SwitchModeComponent } from './switch-mode/switch-mode.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CountriesComponent } from './countries/countries.component';
+import { SearchComponent } from './search/search.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export const routes: Routes = [
