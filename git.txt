@@ -1,0 +1,4 @@
+1. git clone https://github.com/ceejayofficial/CountriesList.git
+2. git add .
+3. git commit -m "Countries List here"
+4. git push origin main
